@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Photo Gallery</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./gallery.css">
+  <script src="./gallery.js" defer></script>
+</head>
+<body>
+  <header class="gallery-header">
+    <span class="gallery-ornament" aria-hidden="true"><span class="gallery-star">✦</span></span>
+    <h1>Solar System Photo Gallery</h1>
+  </header>
+
+  <main>
+    <div id="image" aria-live="polite">Hover over an image below to display here.</div>
+
+    <div class="preview-grid">
+      <img class="preview" src="./mercury.webp" alt="Mercury’s cratered surface" tabindex="0"
+        onmouseenter="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="./venus.jpg" alt="Cloud bands on Venus" tabindex="0"
+        onmouseenter="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="./earth.jpg" alt="Earth with the Americas in view" tabindex="0"
+        onmouseenter="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="./mars.jpg" alt="Mars with its moons Phobos and Deimos" tabindex="0"
+        onmouseenter="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="./saturn.jpg" alt="Saturn and its rings" tabindex="0"
+        onmouseenter="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+      <img class="preview" src="./neptune.jpg" alt="Neptune’s blue disk and wispy clouds" tabindex="0"
+        onmouseenter="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    </div>
+  </main>
+
+  <footer><a href="./photo-credits.txt">NASA image credits</a></footer>
+</body>
+</html>
